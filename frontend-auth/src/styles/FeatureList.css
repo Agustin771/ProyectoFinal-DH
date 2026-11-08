@@ -1,0 +1,33 @@
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.feature-item > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-item button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.feature-item button:hover {
+    opacity: 0.8;
+}
+
+.feature-item strong {
+    font-weight: 600;
+}
+
+.error-message {
+    color: #dc2626;
+}

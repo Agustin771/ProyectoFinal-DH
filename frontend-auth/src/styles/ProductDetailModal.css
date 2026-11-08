@@ -1,0 +1,322 @@
+.product-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    background: rgba(20, 25, 22, .65);
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.product-modal {
+    width: 100%;
+    max-width: 1050px;
+    max-height: 92vh;
+
+    background: #fff;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 70px rgba(0, 0, 0, .2);
+
+    animation: productModalAppear .25s ease;
+}
+
+.product-modal-header {
+    flex-shrink: 0;
+    min-height: 60px;
+    padding: 12px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #fff;
+    border-bottom: 1px solid #edf0f0;
+}
+
+.product-modal-header h2 {
+    margin: 0;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #252b27;
+}
+
+.product-modal-back {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f5f6f4;
+    color: #333;
+
+    font-size: 25px;
+    cursor: pointer;
+
+    transition: background .2s ease;
+}
+
+.product-modal-back:hover {
+    background: #e8ece8;
+}
+
+.product-modal-body {
+    flex: 1;
+    min-height: 0;
+
+    padding: 30px 28px 35px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: #b9c1c7 transparent;
+
+    box-sizing: border-box;
+}
+
+.product-availability {
+    margin-top: 45px;
+}
+
+.product-availability-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.product-availability-header .eyebrow {
+    margin-bottom: 9px;
+}
+
+.product-availability-header h2 {
+    margin: 0 0 9px;
+}
+.product-availability-header p {
+    margin: 0;
+}
+
+.product-share-trigger {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0;
+}
+
+.product-share-trigger button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 26px;
+
+    border: 1px solid #25815b;
+    border-radius: 11px;
+
+    background: #ffffff;
+    color: #25815b;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.product-share-trigger button:hover {
+    background: #25815b;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(37, 129, 91, .18);
+    transform: translateY(-2px);
+}
+
+.product-share-trigger button:active {
+    transform: translateY(0);
+}
+
+
+.reservation-summary {
+    width: 100%;
+    margin: 35px 0;
+    padding: 25px;
+    box-sizing: border-box;
+    background: #f6f9f6;
+    border: 1px solid #e0e9e1;
+    border-radius: 14px;
+}
+
+.reservation-summary h3 {
+    margin: 0 0 22px;
+    color: #29332d;
+    font-size: 21px;
+}
+
+.reservation-summary-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.reservation-summary-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.reservation-summary-details span,
+.reservation-success div span {
+    color: #78827b;
+    font-size: 12px;
+}
+
+.reservation-summary-details strong,
+.reservation-success div strong {
+    color: #29332d;
+    font-size: 15px;
+}
+
+.reservation-confirmation {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e9e1;
+}
+
+.reservation-confirmation p {
+    color: #69736c;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.reservation-review-button,
+.reservation-confirm-button,
+.reservation-success button {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #25815b;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.reservation-review-button:hover,
+.reservation-confirm-button:hover,
+.reservation-success button:hover {
+    background: #1c6848;
+}
+
+.reservation-confirm-button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.reservation-error {
+    margin-top: 18px;
+    padding: 13px;
+    border-radius: 8px;
+    background: #fff0ef;
+    color: #bd4949;
+    font-size: 13px;
+}
+
+.reservation-success {
+    margin: 30px 0;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #d6eadc;
+    border-radius: 14px;
+    background: #f3faf5;
+}
+
+.reservation-success-icon {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #25815b;
+    color: white;
+    font-size: 30px;
+}
+
+.reservation-success h3 {
+    color: #25815b;
+    font-size: 23px;
+    margin: 18px 0 10px;
+}
+
+.reservation-success p {
+    color: #69736c;
+    margin-bottom: 22px;
+}
+
+.reservation-success div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 600px) {
+    .reservation-summary-details {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-summary {
+        padding: 18px;
+    }
+}
+
+
+@keyframes productModalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .product-modal-overlay {
+        padding: 0;
+    }
+
+    .product-modal {
+        width: 100%;
+        height: 100dvh;
+        max-height: 100dvh;
+
+        border-radius: 0;
+    }
+
+    .product-modal-header {
+        padding: 12px 18px;
+    }
+
+    .product-modal-body {
+        padding: 18px;
+    }
+}

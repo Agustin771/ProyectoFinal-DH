@@ -1,0 +1,235 @@
+.recommendations-section {
+    margin-top: 55px;
+    margin-bottom: 60px;
+}
+
+.recommendations-header {
+    margin-bottom: 25px;
+}
+
+.recommendations-header span {
+    color: #20bdb4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.recommendations-header h2 {
+    color: #343b58;
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+.recommendations-header p {
+    color: #8490a5;
+    font-size: 14px;
+}
+
+.recommendations-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(220px, 1fr)
+    );
+    gap: 22px;
+}
+
+.recommendation-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e9ef;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.10);
+}
+
+.recommendation-image {
+    height: 175px;
+    background: #edf2f5;
+    overflow: hidden;
+}
+
+.recommendation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommendation-no-image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+}
+
+.recommendation-content {
+    padding: 16px;
+}
+
+.recommendation-content h3 {
+    color: #343b58;
+    font-size: 17px;
+    margin: 0 0 9px;
+}
+
+.recommendation-content p {
+    color: #8490a5;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.recommendation-category {
+    color: #20bdb4;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.recommendations-status,
+.recommendations-error {
+    padding: 20px;
+    color: #8490a5;
+    font-size: 14px;
+}
+
+.recommendations-error {
+    color: #dc4545;
+}
+
+.clear-category-button {
+    margin-top: 12px;
+    padding: 9px 15px;
+    background: transparent;
+    border: 1px solid #20bdb4;
+    color: #20bdb4;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.clear-category-button:hover {
+    background: #20bdb4;
+    color: white;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 35px 0;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #333;
+    color: white;
+}
+
+.pagination button.active {
+    background: #333;
+    color: white;
+    border-color: #333;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.recommendation-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+.recommendation-feature {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 9px;
+    border-radius: 7px;
+    background: #eaf8f6;
+    color: #287e78;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.recommendation-image {
+    position: relative;
+}
+
+.favorite-button-container {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+}
+
+.favorite-button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #555;
+    font-size: 27px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.favorite-button:hover {
+    transform: scale(1.1);
+}
+
+.favorite-button.active {
+    color: #e63946;
+}
+
+.favorite-button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.favorite-error {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 180px;
+    padding: 6px;
+    background: white;
+    color: #c62828;
+    font-size: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 600px) {
+    .recommendations-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,212 @@
+.share-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    background: rgba(20, 25, 22, .75);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-share-modal {
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #fff;
+    border-radius: 20px;
+
+    box-shadow: 0 24px 80px rgba(0, 0, 0, .25);
+
+    animation: shareAppear .25s ease;
+}
+
+.share-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid #edf0ed;
+}
+
+.share-header h2 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 750;
+    color: #252b27;
+}
+
+.share-header button {
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f2f5f2;
+    color: #455149;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.share-header button:hover {
+    background: #e3ece5;
+    color: #25815b;
+    transform: rotate(90deg);
+}
+
+.share-content {
+    padding: 25px;
+}
+
+.share-preview {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 14px;
+    margin-bottom: 24px;
+
+    background: #f5f8f5;
+    border: 1px solid #e5ece6;
+    border-radius: 13px;
+}
+
+.share-preview img {
+    width: 115px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.share-preview h3 {
+    margin: 5px 0 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #29332d;
+}
+
+.share-preview p {
+    margin: 0;
+    color: #78827b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.share-content label {
+    display: block;
+    margin: 18px 0 9px;
+
+    color: #39443d;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.share-content textarea,
+.share-content select {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dfe6e0;
+    border-radius: 10px;
+
+    background: #fff;
+    color: #29332d;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: border-color .2s ease,
+                box-shadow .2s ease;
+}
+
+.share-content textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.share-content textarea:focus,
+.share-content select:focus {
+    border-color: #25815b;
+    box-shadow: 0 0 0 3px rgba(37, 129, 91, .10);
+}
+
+.share-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 24px;
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: #25815b;
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 14px rgba(37, 129, 91, .18);
+
+    transition: all .2s ease;
+}
+
+.share-submit:hover {
+    background: #1c6848;
+    box-shadow: 0 7px 18px rgba(37, 129, 91, .25);
+    transform: translateY(-2px);
+}
+
+.share-submit:active {
+    transform: translateY(0);
+}
+
+@keyframes shareAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 500px) {
+    .product-share-modal {
+        border-radius: 16px;
+    }
+
+    .share-content {
+        padding: 19px;
+    }
+
+    .share-preview img {
+        width: 85px;
+        height: 85px;
+    }
+}

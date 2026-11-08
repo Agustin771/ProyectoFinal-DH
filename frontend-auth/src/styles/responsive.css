@@ -1,0 +1,9 @@
+.search-content {
+    flex-direction: column;
+}
+
+.search-content input,
+.search-content button {
+    width: 100%;
+    box-sizing: border-box;
+}
