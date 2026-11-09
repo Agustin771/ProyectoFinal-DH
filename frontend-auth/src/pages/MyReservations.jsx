@@ -3,7 +3,7 @@ import { Link, Navigate } from "react-router-dom";
 
 import { useAuth } from "../components/context/AuthContext";
 import { getMyReservations } from "../services/reservationService";
-
+import "../styles/responsive.css";
 import "../styles/myReservations.css";
 
 export default function MyReservations() {
@@ -92,12 +92,12 @@ export default function MyReservations() {
 
         <main className="my-reservations-page">
 
-                <Link
-                    to="/"
-                    className="favorites-back-button"
-                >
-                    ← Volver a la tienda
+            <div className="page-back-wrapper">
+                <Link to="/" className="my-reservations-back">
+                    <span aria-hidden="true">←</span>
+                    Volver a la tienda
                 </Link>
+            </div>
 
             <header className="my-reservations-header">
 

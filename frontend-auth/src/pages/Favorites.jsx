@@ -3,7 +3,7 @@ import { Link, Navigate } from "react-router-dom";
 
 import { useAuth } from "../components/context/AuthContext";
 import { useFavorites } from "../components/context/FavoritesContext";
-
+import "../styles/responsive.css";
 import FavoriteButton from "../components/products/FavoriteButton";
 import ProductDetailModal from "../components/products/ProductDetailModal";
 
@@ -37,12 +37,12 @@ export default function Favorites() {
         <>
             <main className="favorites-page">
 
-                    <Link
-                        to="/"
-                        className="favorites-back-button"
-                    >
-                        ← Volver a la tienda
+                <div className="page-back-wrapper">
+                    <Link to="/" className="my-reservations-back">
+                        <span aria-hidden="true">←</span>
+                        Volver a la tienda
                     </Link>
+                </div>
 
                 <section className="favorites-header">
 

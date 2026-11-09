@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductForm from '../home/ProductForm';
 import CategoryForm from './CategoryForm';
 import '../../styles/AdminDashboard.css';
@@ -6,6 +6,55 @@ import { Link } from 'react-router-dom';
 import CategoryList from './CategoryList';
 
 export default function AdminDashboard() {
+
+    const [isDesktop, setIsDesktop] = useState(
+        window.matchMedia('(min-width: 1024px)').matches
+    );
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
+        const handleScreenChange = (event) => {
+            setIsDesktop(event.matches);
+        };
+
+        mediaQuery.addEventListener('change', handleScreenChange);
+
+        return () => {
+            mediaQuery.removeEventListener('change', handleScreenChange);
+        };
+    }, []);
+
+    if (!isDesktop) {
+        return (
+            <main className="admin-restricted">
+                <div className="admin-restricted-card">
+
+                    <span className="admin-restricted-icon">
+                        💻
+                    </span>
+
+                    <span className="admin-eyebrow">
+                        ACCESO RESTRINGIDO
+                    </span>
+
+                    <h1>Administración disponible solo en versión web</h1>
+
+                    <p>
+                        Para crear productos, administrar categorías
+                        y gestionar tu tienda, necesitás ingresar
+                        desde una computadora.
+                    </p>
+
+                    <Link to="/" className="admin-restricted-button">
+                        ← Volver a la tienda
+                    </Link>
+
+                </div>
+            </main>
+        );
+    }
+
     return (
         <main className="admin-dashboard">
 

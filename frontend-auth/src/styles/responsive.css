@@ -1,9 +1,50 @@
-.search-content {
-    flex-direction: column;
+.page-back-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    margin: 0 0 30px;
 }
 
-.search-content input,
-.search-content button {
-    width: 100%;
+.page-back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: auto;
+    max-width: 100%;
     box-sizing: border-box;
+
+    padding: 10px 16px;
+
+    border: 1px solid #a87555;
+    border-radius: 8px;
+
+    background: white;
+    color: #a87555;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+
+    transition: all .2s ease;
+}
+
+.page-back-button:hover {
+    background: #a87555;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .page-back-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .page-back-button {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
 }

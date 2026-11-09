@@ -181,9 +181,7 @@ export default function Home() {
                             }
                             onProductSelect={onProductSelect}
                         />
-
                     </>
-
                 )}
             </div>
         </main>

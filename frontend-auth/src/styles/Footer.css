@@ -31,9 +31,20 @@
     line-height: 1.5;
 }
 
+/* TABLETS */
+@media (max-width: 768px) {
+    .global-footer {
+        padding: 20px 25px;
+    }
+}
+
 @media (max-width: 600px) {
     .global-footer {
         padding: 20px;
+    }
+
+    .footer-content {
+        gap: 7px;
     }
 
     .logo-text {
@@ -42,5 +53,19 @@
 
     .footer-info p {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .global-footer {
+        padding: 16px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .footer-info p {
+        font-size: 0.75rem;
     }
 }

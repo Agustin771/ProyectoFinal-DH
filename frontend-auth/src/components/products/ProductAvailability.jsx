@@ -203,7 +203,7 @@ export default function ProductAvailability({
             <div className="availability-calendar-container">
                 <Calendar
                     className="modal-calendar"
-                    showDoubleView
+                    showDoubleView={false}
                     minDate={new Date()}
                     value={dates[0] || null}
                     onChange={handleDateChange}

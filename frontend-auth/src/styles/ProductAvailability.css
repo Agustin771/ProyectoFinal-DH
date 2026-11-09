@@ -73,35 +73,26 @@
 
 .product-availability .availability-calendar-container {
     width: 100%;
-    max-width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
     min-width: 0;
     box-sizing: border-box;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 .product-availability .modal-calendar {
     width: 100%;
-    max-width: 850px;
+    max-width: 620px;
     min-width: 0;
     margin: 0 auto;
     padding: 16px;
     box-sizing: border-box;
-    background: #fff;
-    border: 1px solid #e5eae6;
-    border-radius: 12px;
+
+    background: #ffffff;
+    border: 1px solid #e8eee9;
+    border-radius: 14px;
+
     font-family: inherit;
-    line-height: 1.5;
-}
-
-.product-availability .modal-calendar .react-calendar__viewContainer {
-    display: flex;
-    gap: 16px;
-}
-
-.product-availability .modal-calendar .react-calendar__viewContainer > * {
-    flex: 1 1 0;
-    width: 50%;
-    min-width: 0;
 }
 
 .product-availability .modal-calendar .react-calendar__navigation {
@@ -562,6 +553,65 @@
     outline: 3px solid rgba(37, 129, 91, .3);
     outline-offset: 3px;
 }
+
+.product-availability .availability-calendar-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.product-availability .modal-calendar {
+    display: block !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+}
+
+.product-availability .modal-calendar .react-calendar__viewContainer {
+    display: block !important;
+    width: 100% !important;
+}
+
+.product-availability .modal-calendar .react-calendar__viewContainer > * {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+}
+
+.product-availability .modal-calendar .react-calendar__month-view {
+    width: 100% !important;
+}
+
+.product-availability .modal-calendar .react-calendar__month-view__days {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+}
+
+.product-availability .modal-calendar .react-calendar__tile {
+    flex: 0 0 14.2857% !important;
+    max-width: 14.2857% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 480px) {
+    .product-availability .availability-calendar-container {
+        max-width: 100%;
+    }
+
+    .product-availability .modal-calendar {
+        max-width: 100% !important;
+        padding: 10px !important;
+    }
+}
+
 
 @media (max-width: 600px) {
     .product-availability .availability-continue button {

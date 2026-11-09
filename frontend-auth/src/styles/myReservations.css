@@ -10,15 +10,6 @@
     margin-bottom: 45px;
 }
 
-.my-reservations-back {
-    display: block;
-    width: fit-content;
-    margin-bottom: 35px;
-    color: #8f654e;
-    text-decoration: none;
-    font-weight: 600;
-}
-
 .my-reservations-eyebrow {
     color: #b47b59;
     font-size: 12px;
@@ -174,10 +165,42 @@
     font-size: 12px;
 }
 
+.my-reservations-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    box-sizing: border-box;
+
+    margin: 25px 0 30px;
+    padding: 10px 17px;
+
+    border: 1px solid #a8795c;
+    border-radius: 8px;
+    color: #a8795c;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.my-reservations-back:hover {
+    background: #a8795c;
+    color: white;
+}
+
 @media (max-width: 600px) {
 
     .my-reservations-page {
         padding: 35px 16px 60px;
+    }
+
+    .my-reservations-back {
+        margin-bottom: 35px;
+        padding: 9px 14px;
+        font-size: 12px;
     }
 
     .my-reservations-header h1 {
@@ -192,5 +215,4 @@
         grid-template-columns: 1fr;
         gap: 18px;
     }
-
 }
