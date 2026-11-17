@@ -4,7 +4,15 @@
   <img width="949" height="470" alt="image" src="https://github.com/user-attachments/assets/6e2cddbb-834b-4de1-89a7-f810972b1c2d" />
   <img width="1274" height="629" alt="image" src="https://github.com/user-attachments/assets/c0681d14-0ae9-4cfe-a760-6bfa8abc76b0" />
   <img width="338" height="475" alt="image" src="https://github.com/user-attachments/assets/8db1a9b6-f5f5-4521-bec9-1637466212a3" />
+
+  {PANEL EXCLUSIVO PARA ROL ADMIN}
+  <img width="1064" height="397" alt="image" src="https://github.com/user-attachments/assets/4444d44a-18c4-41d2-8270-32663be5cb2e" />
+  <img width="543" height="581" alt="image" src="https://github.com/user-attachments/assets/1bfb0261-eb13-4a65-9b1a-69240dc12ed7" />
+  <img width="886" height="566" alt="image" src="https://github.com/user-attachments/assets/87b3eb43-607d-4d04-bc04-9ed40936d3ce" />
+  <img width="861" height="576" alt="image" src="https://github.com/user-attachments/assets/e177c552-9538-43b4-8863-cc8471da70fe" />
 </p>
+
+
 
 
 # 🏨 ReservaYa
