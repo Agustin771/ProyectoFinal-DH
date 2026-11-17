@@ -1,3 +1,12 @@
+<p align="center">
+  <img width="1267" height="631" alt="image" src="https://github.com/user-attachments/assets/a753d33a-9788-4cd9-ac47-f9b056abfa95" />
+  <img width="754" height="203" alt="image" src="https://github.com/user-attachments/assets/7e4611b0-21f6-4c9f-8fc3-f827bafe9d98" />
+  <img width="949" height="470" alt="image" src="https://github.com/user-attachments/assets/6e2cddbb-834b-4de1-89a7-f810972b1c2d" />
+  <img width="1274" height="629" alt="image" src="https://github.com/user-attachments/assets/c0681d14-0ae9-4cfe-a760-6bfa8abc76b0" />
+  <img width="338" height="475" alt="image" src="https://github.com/user-attachments/assets/8db1a9b6-f5f5-4521-bec9-1637466212a3" />
+</p>
+
+
 # 🏨 ReservaYa
 
 **Aplicación web de reservas y gestión de productos**, desarrollada como proyecto final de formación. Permite a los usuarios explorar productos, consultar disponibilidad, gestionar favoritos y realizar reservas, mientras que los administradores pueden administrar el contenido de la plataforma.
